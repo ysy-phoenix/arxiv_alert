@@ -3,7 +3,8 @@ name: ArXiv Alert
 on:
   schedule:
     # Runs at 00:00 UTC everyday
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"  
+  workflow_dispatch:  
 
 jobs:
   build:
