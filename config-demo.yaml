@@ -1,0 +1,18 @@
+mail_title: "Daily ArXiv Mail Alert"
+smtp_host: "smtp.163.com"
+smtp_port: 465
+categories: ["cs.ai", "cs.cl", "cs.se", "cs.lg", "cs.pl", "cs.ne"]
+keywords:
+  [
+    "bug",
+    "repair",
+    "large language model",
+    "program synthesis",
+    "code generation",
+    "quantization",
+  ]
+authors: []
+max_results: 100
+sender: sender
+password: password
+receivers: ["None"]
