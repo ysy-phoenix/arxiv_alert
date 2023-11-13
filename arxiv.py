@@ -129,7 +129,7 @@ def load_config(args):
     config_dict['sender'] = os.getenv('SENDER')
     config_dict['password'] = os.getenv('PASSWORD')
     config_dict['receivers'] = os.getenv('RECEIVERS')
-    print(config_dict['sender'], config_dict['password'], config_dict['receivers'])
+    print(type(config_dict['sender']), type(config_dict['password']), type(config_dict['receivers']))
     return config_dict
 
 
@@ -162,7 +162,7 @@ def send_email(body, config_dict):
     sender = config_dict['sender']
     password = config_dict['password']
     receivers = config_dict['receivers']
-    print(len(sender), len(password))
+    print(len(sender), len(password), len(receivers))
     msg = MIMEMultipart()
 
     msg['Subject'] = title
