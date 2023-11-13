@@ -128,7 +128,7 @@ def load_config(args):
             print(exc)
     config_dict['sender'] = os.getenv('SENDER')
     config_dict['password'] = os.getenv('PASSWORD')
-    config_dict['receivers'] = os.getenv('RECEIVERS')
+    config_dict['receivers'] = [os.getenv('RECEIVERS')]
     print(type(config_dict['sender']), type(config_dict['password']), type(config_dict['receivers']))
     return config_dict
 
